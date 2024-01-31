@@ -1,5 +1,6 @@
-import "@/styles/globals.css";
+import "../styles/global.css"
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+// 要讓每一個頁面(Component)都套用的一樣的style
+export default function App({Component, pageProps}){
+    return <Component {...pageProps}/>
 }
