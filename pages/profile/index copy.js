@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
     const response = await fetch("http://localhost:8080/students")
     const data = await response.json()
    return{

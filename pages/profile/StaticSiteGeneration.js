@@ -1,4 +1,9 @@
+
+
+// url: localhost:3000/profile
+
 // 名稱一定是 getStaticProps()
+// 獲取所有學生資料
 export async function getStaticProps(){
     const response = await fetch("http://localhost:8080/students")
     const data = await response.json()
@@ -16,6 +21,7 @@ export async function getStaticProps(){
 }
 
 // props:{data} =  {data}
+// 產生所有學生的頁面
 export default function StaticGenerationPage({data}){
     return(
         <div>
